@@ -17,9 +17,10 @@
   * @param void
   */
 
-  function loadView($name){
+  function loadView($name, $data = []){
     $viewPath = basePath("views/{$name}.view.php");
     if(file_exists( $viewPath)){
+      extract($data);
         require  $viewPath;
     }
 
@@ -79,3 +80,13 @@
    
 
    }
+
+    /**
+   * Format Salary
+   * @param string $salary
+   * @return string formatedSalary
+   * 
+   */
+function formatSalary($salary){
+  return '$' .number_format(floatval($salary));
+}

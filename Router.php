@@ -3,6 +3,10 @@
 class Router{
     protected $routes = [];
 
+    /**
+     * Add a new route to this array
+     */
+
     public function registerRoute($method, $uri, $controller){
         $this->routes[] = [
             'method' => $method,
@@ -71,11 +75,10 @@ class Router{
             if($route['uri'] ===$uri && $route['method'] === $method){
                 require basePath($route['controller']);
             }
+           
         }
 
-        http_response_code(404);
-        loadView('error/404');
-        exit;
+     
     }
 }
 

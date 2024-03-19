@@ -1,5 +1,7 @@
 <?php
-// echo "This is from create listing page";
+
+use Framework\Database;
+
 
 
 $config =  require basePath('config/db.php');

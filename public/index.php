@@ -1,11 +1,23 @@
 <?php
-require '../helpers.php';
-require basePath('Router.php');
-require basePath('Database.php');
 
+require __DIR__ . '/../vendor/autoload.php';
+// var_dump(__DIR__);
+require '../helpers.php';
+use Framework\Router;
+
+// require basePath('Framework/Router.php');
+// require basePath('Framework/Database.php');
+
+// spl_autoload_register(function($class){
+//     $path = basePath('Framework/' . $class .'.php');
+//     if(file_exists($path)){
+//          require $path;
+//     }
+   
+// });
 
 // instantiate the router
-$router = new Router;
+$router = new Router();
 
 // get routes (url path and query string if any)
 require basePath('routes.php');

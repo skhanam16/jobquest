@@ -5,7 +5,7 @@
     <?= loadPartial('top-banner') ?>
     <!-- Job Listings -->
 
-    <?= inspect($listing) ?>
+    <!-- <?= inspect($listing) ?> -->
     <section class="container mx-auto p-4 mt-4">
       <div class="rounded-lg shadow-md bg-white p-3">
        <div class="flex justify-between items-center">

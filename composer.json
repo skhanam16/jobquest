@@ -1,0 +1,19 @@
+{
+   "name" : "skhanam16/jobquest",
+   "description": "Joblisting application",
+   "authors": [
+    {
+         "name": "Shaleha Khanam",
+         "email": "khanamshaleha@yahoo.com.au"
+
+    }
+   
+   ],
+   "autoload": {
+    "psr-4": {
+        "Framework\\": "Framework/",
+        "App\\": "App/"
+    }
+   }
+}
+

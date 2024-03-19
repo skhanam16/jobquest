@@ -1,4 +1,6 @@
 <?php
+use Framework\Database;
+
 $config =  require basePath('config/db.php');
 
 /**
@@ -9,6 +11,8 @@ $config =  require basePath('config/db.php');
 
  $listings = $db->query('SELECT * FROM listings LIMIT 6')->fetchAll();
 
-loadView('home' , [
+loadView('listings/index' , [
     'listings' =>$listings
 ]);
+
+// loadView('listings/index');

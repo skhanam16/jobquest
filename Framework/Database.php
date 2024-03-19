@@ -1,10 +1,15 @@
 <?php
+namespace Framework;
+
+use PDO;
 
 require '../config/db.php';
 /**
  * set PDO::ATTR_ERRMODE to PDO::ERRMODE_EXCEPTION
  * set PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
  */
+
+
 class Database{
     public $conn;
     public function __construct($config){
